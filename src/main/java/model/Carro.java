@@ -7,7 +7,7 @@ public class Carro {
     private Boolean ligado;
     private Integer velocidadeAtual;
 
-    // Os testes mostrar a presença de erros e não sua ausencia
+    // Os testes mostram a presença de erros e não sua ausencia
     public Carro() {
         this.ligado = false;
         this.velocidadeAtual = 0;

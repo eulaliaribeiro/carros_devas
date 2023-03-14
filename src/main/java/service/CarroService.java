@@ -22,7 +22,9 @@ public class CarroService {
         }
     }
 
-    public void frear(Carro carro) {
-        carro.setVelocidadeAtual(carro.getVelocidadeAtual()-10);
+    public void frear(Carro carro, int velocidade) {
+        if (carro.getLigado() &&
+                ((carro.getVelocidadeAtual() - velocidade) >= 0)) {
+            carro.setVelocidadeAtual(carro.getVelocidadeAtual() - velocidade);}
     }
 }
